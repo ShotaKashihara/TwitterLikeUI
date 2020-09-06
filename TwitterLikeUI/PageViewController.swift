@@ -21,15 +21,14 @@ class PageViewController: UIPageViewController {
     private let pages: [PageChildViewController]
     private let didScrollHandler: (CGFloat) -> Void
     private var isViewDidAppear: Bool = false
-    var scrollY: CGFloat = 0.0
+    var scrollY: CGFloat
 
     init(pages: [PageChildViewController], parameter: ViewController.Parameter, didScrollHandler: @escaping ((CGFloat) -> Void)) {
         self.pages = pages
         self.parameter = parameter
         self.didScrollHandler = didScrollHandler
+        self.scrollY = -parameter.defaultHeaderHeight
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
-//        self.automaticallyAdjustsScrollViewInsets = false
-//        self.scroll
     }
 
     required init?(coder: NSCoder) {
