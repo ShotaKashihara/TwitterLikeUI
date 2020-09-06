@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF248E7B2503704B0076649E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248E7A2503704B0076649E /* AppDelegate.swift */; };
+		EF248E7F2503704B0076649E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248E7E2503704B0076649E /* ViewController.swift */; };
+		EF248E842503704F0076649E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF248E832503704F0076649E /* Assets.xcassets */; };
+		EF248E872503704F0076649E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF248E852503704F0076649E /* LaunchScreen.storyboard */; };
+		EF248E8F250371440076649E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF248E8E250371440076649E /* ViewController.xib */; };
+		EF248E9C250376DC0076649E /* Array.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248E95250376DC0076649E /* Array.extension.swift */; };
+		EF248E9D250376DC0076649E /* NSLayoutConstraint.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248E96250376DC0076649E /* NSLayoutConstraint.extension.swift */; };
+		EF248E9E250376DC0076649E /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248E97250376DC0076649E /* Functions.swift */; };
+		EF248E9F250376DC0076649E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248E98250376DC0076649E /* Extension.swift */; };
+		EF248EA0250376DC0076649E /* UIViewLayoutGuideProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248E99250376DC0076649E /* UIViewLayoutGuideProxy.swift */; };
+		EF248EA1250376DC0076649E /* UIViewController.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248E9A250376DC0076649E /* UIViewController.extension.swift */; };
+		EF248EA2250376DC0076649E /* UIView.extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248E9B250376DC0076649E /* UIView.extension.swift */; };
+		EF248EA5250378430076649E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248EA4250378430076649E /* PageViewController.swift */; };
+		EF248EAB25037A130076649E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248EAA25037A130076649E /* TableViewController.swift */; };
+		EF248EAD2504A4D70076649E /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248EAC2504A4D70076649E /* Comparable.swift */; };
+		EF248EAF2504AC450076649E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248EAE2504AC450076649E /* UIView.swift */; };
+		EF248EB12504B2980076649E /* HScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF248EB02504B2980076649E /* HScrollViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF248E772503704B0076649E /* TwitterLikeUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterLikeUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF248E7A2503704B0076649E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF248E7E2503704B0076649E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF248E832503704F0076649E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF248E862503704F0076649E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF248E882503704F0076649E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF248E8E250371440076649E /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		EF248E95250376DC0076649E /* Array.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.extension.swift; sourceTree = "<group>"; };
+		EF248E96250376DC0076649E /* NSLayoutConstraint.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.extension.swift; sourceTree = "<group>"; };
+		EF248E97250376DC0076649E /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		EF248E98250376DC0076649E /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EF248E99250376DC0076649E /* UIViewLayoutGuideProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewLayoutGuideProxy.swift; sourceTree = "<group>"; };
+		EF248E9A250376DC0076649E /* UIViewController.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.extension.swift; sourceTree = "<group>"; };
+		EF248E9B250376DC0076649E /* UIView.extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.extension.swift; sourceTree = "<group>"; };
+		EF248EA4250378430076649E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EF248EAA25037A130076649E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EF248EAC2504A4D70076649E /* Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
+		EF248EAE2504AC450076649E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		EF248EB02504B2980076649E /* HScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF248E742503704B0076649E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF248E6E2503704B0076649E = {
+			isa = PBXGroup;
+			children = (
+				EF248E792503704B0076649E /* TwitterLikeUI */,
+				EF248E782503704B0076649E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF248E782503704B0076649E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF248E772503704B0076649E /* TwitterLikeUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF248E792503704B0076649E /* TwitterLikeUI */ = {
+			isa = PBXGroup;
+			children = (
+				EF248EA7250379C50076649E /* StubViews */,
+				EF248E92250376740076649E /* Extension */,
+				EF248E90250372040076649E /* Supporting Files */,
+				EF248E7E2503704B0076649E /* ViewController.swift */,
+				EF248E8E250371440076649E /* ViewController.xib */,
+				EF248EA4250378430076649E /* PageViewController.swift */,
+				EF248EB02504B2980076649E /* HScrollViewController.swift */,
+			);
+			path = TwitterLikeUI;
+			sourceTree = "<group>";
+		};
+		EF248E90250372040076649E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF248E7A2503704B0076649E /* AppDelegate.swift */,
+				EF248E832503704F0076649E /* Assets.xcassets */,
+				EF248E852503704F0076649E /* LaunchScreen.storyboard */,
+				EF248E882503704F0076649E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF248E92250376740076649E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EF248EA32503774C0076649E /* AutolayoutExtension */,
+				EF248EAC2504A4D70076649E /* Comparable.swift */,
+				EF248EAE2504AC450076649E /* UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EF248EA32503774C0076649E /* AutolayoutExtension */ = {
+			isa = PBXGroup;
+			children = (
+				EF248E95250376DC0076649E /* Array.extension.swift */,
+				EF248E98250376DC0076649E /* Extension.swift */,
+				EF248E97250376DC0076649E /* Functions.swift */,
+				EF248E96250376DC0076649E /* NSLayoutConstraint.extension.swift */,
+				EF248E9B250376DC0076649E /* UIView.extension.swift */,
+				EF248E9A250376DC0076649E /* UIViewController.extension.swift */,
+				EF248E99250376DC0076649E /* UIViewLayoutGuideProxy.swift */,
+			);
+			path = AutolayoutExtension;
+			sourceTree = "<group>";
+		};
+		EF248EA7250379C50076649E /* StubViews */ = {
+			isa = PBXGroup;
+			children = (
+				EF248EAA25037A130076649E /* TableViewController.swift */,
+			);
+			path = StubViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF248E762503704B0076649E /* TwitterLikeUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF248E8B2503704F0076649E /* Build configuration list for PBXNativeTarget "TwitterLikeUI" */;
+			buildPhases = (
+				EF248E732503704B0076649E /* Sources */,
+				EF248E742503704B0076649E /* Frameworks */,
+				EF248E752503704B0076649E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterLikeUI;
+			productName = TwitterLikeUI;
+			productReference = EF248E772503704B0076649E /* TwitterLikeUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF248E6F2503704B0076649E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = shota.kashihara;
+				TargetAttributes = {
+					EF248E762503704B0076649E = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = EF248E722503704B0076649E /* Build configuration list for PBXProject "TwitterLikeUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF248E6E2503704B0076649E;
+			productRefGroup = EF248E782503704B0076649E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF248E762503704B0076649E /* TwitterLikeUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF248E752503704B0076649E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF248E872503704F0076649E /* LaunchScreen.storyboard in Resources */,
+				EF248E8F250371440076649E /* ViewController.xib in Resources */,
+				EF248E842503704F0076649E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF248E732503704B0076649E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF248EAF2504AC450076649E /* UIView.swift in Sources */,
+				EF248EA2250376DC0076649E /* UIView.extension.swift in Sources */,
+				EF248EB12504B2980076649E /* HScrollViewController.swift in Sources */,
+				EF248EA5250378430076649E /* PageViewController.swift in Sources */,
+				EF248E9D250376DC0076649E /* NSLayoutConstraint.extension.swift in Sources */,
+				EF248E7F2503704B0076649E /* ViewController.swift in Sources */,
+				EF248E7B2503704B0076649E /* AppDelegate.swift in Sources */,
+				EF248E9F250376DC0076649E /* Extension.swift in Sources */,
+				EF248EAB25037A130076649E /* TableViewController.swift in Sources */,
+				EF248E9E250376DC0076649E /* Functions.swift in Sources */,
+				EF248EA0250376DC0076649E /* UIViewLayoutGuideProxy.swift in Sources */,
+				EF248EAD2504A4D70076649E /* Comparable.swift in Sources */,
+				EF248EA1250376DC0076649E /* UIViewController.extension.swift in Sources */,
+				EF248E9C250376DC0076649E /* Array.extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF248E852503704F0076649E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF248E862503704F0076649E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF248E892503704F0076649E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF248E8A2503704F0076649E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF248E8C2503704F0076649E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8LJV72WFV;
+				INFOPLIST_FILE = "TwitterLikeUI/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shota.kashihara.TwitterLikeUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF248E8D2503704F0076649E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F8LJV72WFV;
+				INFOPLIST_FILE = "TwitterLikeUI/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = shota.kashihara.TwitterLikeUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF248E722503704B0076649E /* Build configuration list for PBXProject "TwitterLikeUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF248E892503704F0076649E /* Debug */,
+				EF248E8A2503704F0076649E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF248E8B2503704F0076649E /* Build configuration list for PBXNativeTarget "TwitterLikeUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF248E8C2503704F0076649E /* Debug */,
+				EF248E8D2503704F0076649E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF248E6F2503704B0076649E /* Project object */;
+}
