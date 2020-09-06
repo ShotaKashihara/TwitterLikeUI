@@ -10,7 +10,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var headerHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var minimumHeaderHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var tabStackView: UIStackView!
     private var pageViewController: PageViewController!
 
     init(_ parameter: Parameter = .init(defaultHeaderHeight: 200, minimumHeaderHeight: 44)) {
@@ -49,7 +51,24 @@ class ViewController: UIViewController {
         contentView.ale.addFilledSubview(pageViewController.view)
         /// ヘッダの高さを変更
         headerHeightConstraint.constant = parameter.defaultHeaderHeight
+        /// タブ部分の高さを変更
+        minimumHeaderHeightConstraint.constant = parameter.minimumHeaderHeight
         /// 各ページの `contentInset` をヘッダにあわせる
         pageViewController.contentInsetをヘッダの高さに合わせる(parameter.defaultHeaderHeight)
+        /// タブを `pages` の数だけ作る
+        pages.forEach { [weak self] page in
+            let button = UIButton(type: .custom)
+            button.setTitle("Table \(page.index)", for: .normal)
+            button.accessibilityIdentifier = String(page.index)
+            button.addTarget(self, action: #selector(tapTab(event:)), for: .touchUpInside)
+            button.widthAnchor.constraint(equalToConstant: 100).ale.activate()
+            self?.tabStackView.addArrangedSubview(button)
+        }
+        tabStackView.addArrangedSubview(UIView())
+    }
+
+    @objc func tapTab(event: UIButton) {
+        guard let index = Int(event.accessibilityIdentifier ?? "") else { return }
+        pageViewController.scrollPageTo(index: index)
     }
 }

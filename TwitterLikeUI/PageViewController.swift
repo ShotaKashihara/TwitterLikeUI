@@ -3,6 +3,7 @@ import UIKit
 
 protocol PageChildViewController: UIViewController {
     var scrollView: UIScrollView { get }
+    var index: Int { get }
 }
 
 extension PageChildViewController {
@@ -46,13 +47,19 @@ class PageViewController: UIPageViewController {
         isViewDidAppear = true
     }
 
+    func scrollPageTo(index: Int) {
+        let currentIndex = pages.firstIndex(where: { $0 === viewControllers?.first }) ?? -1
+        let direction: NavigationDirection = currentIndex < index ? .forward : .reverse
+        setViewControllers([pages[index]], direction: direction, animated: true, completion: nil)
+    }
+
     func contentInsetをヘッダの高さに合わせる(_ headerHeight: CGFloat) {
         pages.forEach { p in
             p.scrollView.contentInset = .init(top: headerHeight, left: 0, bottom: 0, right: 0)
             p.scrollView.scrollIndicatorInsets = .init(top: headerHeight, left: 0, bottom: 0, right: 0)
         }
     }
-    /// これは各画面から呼ばれる
+    /// これは子画面から呼ばれる
     func scrollViewDidScroll(viewController: UIViewController, scrollView: UIScrollView) {
         guard isViewDidAppear else {
             return

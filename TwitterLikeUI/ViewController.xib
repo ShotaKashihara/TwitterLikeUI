@@ -13,6 +13,8 @@
                 <outlet property="headerHeightConstraint" destination="Oqr-lS-Ael" id="g2l-GE-2DN"/>
                 <outlet property="headerTopConstraint" destination="OxI-r4-m03" id="QtE-dy-5G0"/>
                 <outlet property="headerView" destination="oEa-aK-s2N" id="eUe-65-Bg7"/>
+                <outlet property="minimumHeaderHeightConstraint" destination="K0J-XI-glh" id="GSD-cD-sqG"/>
+                <outlet property="tabStackView" destination="krP-YR-A2q" id="5BE-S8-Ony"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0vn-im-kA8"/>
             </connections>
         </placeholder>
@@ -27,9 +29,20 @@
                 </view>
                 <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEa-aK-s2N">
                     <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krP-YR-A2q">
+                            <rect key="frame" x="0.0" y="156" width="414" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="K0J-XI-glh"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="krP-YR-A2q" firstAttribute="leading" secondItem="oEa-aK-s2N" secondAttribute="leading" id="NiK-6e-s4A"/>
+                        <constraint firstAttribute="bottom" secondItem="krP-YR-A2q" secondAttribute="bottom" id="Oq4-Z9-BLm"/>
                         <constraint firstAttribute="height" constant="200" id="Oqr-lS-Ael"/>
+                        <constraint firstAttribute="trailing" secondItem="krP-YR-A2q" secondAttribute="trailing" id="ttD-qc-ONW"/>
                     </constraints>
                 </view>
             </subviews>
