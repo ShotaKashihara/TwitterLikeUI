@@ -40,6 +40,9 @@ class ViewController: UIViewController {
                 guard let self = self else { return }
                 let diff = offset.clamp(to: 0...self.parameter.shrinkOffset)
                 self.headerTopConstraint.constant = -diff
+                if offset < 0 {
+                    self.headerHeightConstraint.constant = self.parameter.defaultHeaderHeight - offset
+                }
             }
         )
         addChild(pageViewController)

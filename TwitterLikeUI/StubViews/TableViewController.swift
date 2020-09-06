@@ -37,10 +37,6 @@ class TableViewController: UITableViewController, PageChildViewController {
         super.viewDidLoad()
         tableView.register(TableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.rowHeight = 128
-
-        ob = tableView.observe(\.contentOffset) { (tableView, change) in
-            print(tableView)
-        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
