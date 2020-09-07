@@ -44,6 +44,10 @@ class ViewController: UIViewController {
                 self.headerTopConstraint.constant = -diff
                 if offset < 0 {
                     self.headerHeightConstraint.constant = self.parameter.defaultHeaderHeight - offset
+                    let indicatorInsets = self.parameter.defaultHeaderHeight - offset
+                    self.pageViewController.childScrollViews.forEach { s in
+                        s.scrollIndicatorInsets = .init(top: indicatorInsets, left: 0, bottom: 0, right: 0)
+                    }
                 }
             }
         )
@@ -54,7 +58,11 @@ class ViewController: UIViewController {
         /// タブ部分の高さを変更
         minimumHeaderHeightConstraint.constant = parameter.minimumHeaderHeight
         /// 各ページの `contentInset` をヘッダにあわせる
-        pageViewController.contentInsetをヘッダの高さに合わせる(parameter.defaultHeaderHeight)
+        let headerHeight = parameter.defaultHeaderHeight
+        pageViewController.childScrollViews.forEach { s in
+            s.contentInset = .init(top: headerHeight, left: 0, bottom: 0, right: 0)
+            s.scrollIndicatorInsets = .init(top: headerHeight, left: 0, bottom: 0, right: 0)
+        }
         /// タブを `pages` の数だけ作る
         pages.forEach { [weak self] page in
             let button = UIButton(type: .custom)

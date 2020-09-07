@@ -24,6 +24,10 @@ class PageViewController: UIPageViewController {
     private var isViewDidAppear: Bool = false
     var scrollY: CGFloat
 
+    var childScrollViews: [UIScrollView] {
+        return pages.map(\.scrollView)
+    }
+
     init(pages: [PageChildViewController], parameter: ViewController.Parameter, didScrollHandler: @escaping ((CGFloat) -> Void)) {
         self.pages = pages
         self.parameter = parameter
@@ -53,12 +57,6 @@ class PageViewController: UIPageViewController {
         setViewControllers([pages[index]], direction: direction, animated: true, completion: nil)
     }
 
-    func contentInsetをヘッダの高さに合わせる(_ headerHeight: CGFloat) {
-        pages.forEach { p in
-            p.scrollView.contentInset = .init(top: headerHeight, left: 0, bottom: 0, right: 0)
-            p.scrollView.scrollIndicatorInsets = .init(top: headerHeight, left: 0, bottom: 0, right: 0)
-        }
-    }
     /// これは子画面から呼ばれる
     func scrollViewDidScroll(viewController: UIViewController, scrollView: UIScrollView) {
         guard isViewDidAppear else {
